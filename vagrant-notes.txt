@@ -1,0 +1,11 @@
+> vagrant ssh
+
+$ cd /vagrant
+$ bundle install
+$ rake db:create
+
+Success. You can now start the database server using:
+
+    /usr/lib/postgresql/9.3/bin/postgres -D /usr/local/pgsql/data
+or
+    /usr/lib/postgresql/9.3/bin/pg_ctl -D /usr/local/pgsql/data -l logfile start
